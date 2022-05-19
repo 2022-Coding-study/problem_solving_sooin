@@ -7,11 +7,11 @@ public class MostPopulationTest {
 		String key, value;
 		int max = 0;
 		String maxPopulation = "";
-		System.out.println("³ª¶ó ÀÌ¸§°ú ÀÎ±¸¸¦ 3°³ ÀÔ·ÂÇÏ¼¼¿ä.(¿¹: Korea 5000)");
+		System.out.println("ë‚˜ë¼ ì´ë¦„ê³¼ ì¸êµ¬ë¥¼ 3ê°œ ì…ë ¥í•˜ì„¸ìš”.(ì˜ˆ: Korea 5000)");
 		Map<String, String> map = new HashMap<String, String>();
 
 		for (int i = 0; i < 3; i++) {
-			System.out.print(i + 1 + ". ³ª¶ó ÀÌ¸§, ÀÎ±¸ >> ");
+			System.out.print(i + 1 + ". ë‚˜ë¼ ì´ë¦„, ì¸êµ¬ >> ");
 			key = sc.next();
 			value = sc.next();
 			map.put(key, value);
@@ -27,7 +27,7 @@ public class MostPopulationTest {
 				maxPopulation = k1;
 			}
 		}
-		System.out.println(String.format("Á¦ÀÏ ÀÎ±¸°¡ ¸¹Àº ³ª¶ó´Â (%s, %s)", maxPopulation, map.get(maxPopulation)));
+		System.out.println(String.format("ì œì¼ ì¸êµ¬ê°€ ë§ì€ ë‚˜ë¼ëŠ” (%s, %s)", maxPopulation, map.get(maxPopulation)));
 	}
 
 }
