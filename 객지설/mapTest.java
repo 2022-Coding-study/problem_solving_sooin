@@ -5,9 +5,9 @@ public class mapTest {
 		Scanner sc = new Scanner(System.in);
 		String key, value;
 		Map<String, String> map = new HashMap<String, String>();
-		map.put("java", "ÀÚ¹Ù");
-		map.put("school", "ÇĞ±³");
-		map.put("map", "Áöµµ");
+		map.put("java", "ìë°”");
+		map.put("school", "í•™êµ");
+		map.put("map", "ì§€ë„");
 
 		System.out.println("*** keySet() ***");
 		Set<String> keys = map.keySet();
@@ -15,7 +15,7 @@ public class mapTest {
 
 		while (it.hasNext()) {
 			String k1 = it.next();
-			System.out.println(String.format("´Ü¾î : %s, ÀÇ¹Ì : %s", k1, map.get(k1)));
+			System.out.println(String.format("ë‹¨ì–´ : %s, ì˜ë¯¸ : %s", k1, map.get(k1)));
 		}
 
 		System.out.println("*** entrySet() ***");
@@ -34,17 +34,17 @@ public class mapTest {
 
 		System.out.println("");
 		do {
-			System.out.print("Ã£°í ½ÍÀº ´Ü¾î : ");
+			System.out.print("ì°¾ê³  ì‹¶ì€ ë‹¨ì–´ : ");
 			key = sc.next();
 			if (key.equals("quit"))
 				break;
 			else if (map.containsKey(key))
-				System.out.println("´Ü¾îÀÇ ÀÇ¹Ì´Â : "+map.get(key));
+				System.out.println("ë‹¨ì–´ì˜ ì˜ë¯¸ëŠ” : "+map.get(key));
 			else
-				System.out.println("Ã£´Â ´Ü¾î°¡ ¾ø½À´Ï´Ù.");
+				System.out.println("ì°¾ëŠ” ë‹¨ì–´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
 		} while (!key.equals("quit"));
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 
 }
